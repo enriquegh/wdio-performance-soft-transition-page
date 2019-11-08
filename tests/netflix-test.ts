@@ -1,7 +1,10 @@
 import { TEST_NAME, METRICS } from "../constants";
 import { expect } from "chai";
-describe("Performance test", () => {
+describe(TEST_NAME, () => {
     it("should go to Netflix take you to Plans section", () => {
+
+        browser.throttleNetwork("Regular 4G")
+        browser.throttleCPU(4)
     
         browser.url("https://www.netflix.com/signup")
         
