@@ -3,9 +3,11 @@
         "baseUrl": ".",
         "paths": {
             "*": [ "./*" ],
-            "src/*": ["./src/*"]
+            "src/*": ["./src/*"],
+            "webdriver": ["./local-types/webdriver/*"]
         },
-        "types": ["@wdio/sync", "@types/mocha"]
+        "types": ["@wdio/sync", "@types/mocha"],
+        "typeRoots": ["./local-types","./node_modules/@types"],
     },
     "include": [
         "./tests/**/*.ts"
