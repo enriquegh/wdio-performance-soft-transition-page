@@ -2,7 +2,7 @@ node {
     env.NODEJS_HOME = "${tool '12.6'}"
     env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
     stage('Checkout Repo') {
-    git changelog: false, poll: false, url: 'https://github.com/enriquegh/wdio-performance-soft-transition-page.git'
+    git branch: 'enriquegh-chrome-version', changelog: false, poll: false, url: 'https://github.com/enriquegh/wdio-performance-soft-transition-page.git'
     
     }
     stage('Install') {
