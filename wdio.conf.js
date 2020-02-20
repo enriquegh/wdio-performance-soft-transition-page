@@ -24,7 +24,7 @@ exports.config = {
         {
             platformName:"Windows 10",
             browserName: 'googlechrome',
-            browserVersion: 'latest-2',
+            browserVersion: 'latest',
             "sauce:options": {
                 extendedDebugging: true,
                 capturePerformance: true,
